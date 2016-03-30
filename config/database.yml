@@ -1,0 +1,13 @@
+development: &development
+  adapter: postgresql
+  encoding: utf-8
+  hostname: "192.168.99.100"
+  pool: 5
+  database: postgres
+  username: postgres
+  password: docker
+  port: 5432
+
+test: 
+  <<: *development
+  adapter: sqlite
