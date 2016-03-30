@@ -1,3 +1,3 @@
-require File.join [__dir__, 'app', 'app.rb']
+require './app/app'
 
 run App
