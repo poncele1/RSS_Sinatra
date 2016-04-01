@@ -1,0 +1,14 @@
+<form action="/posts/<%= @post.id %>" method="post">
+  <input name="_method" type="hidden" value="delete" >
+ <div class="form-group">
+  <label for="post_body">Title:</label>
+  <p><%=h @post.title %></p>
+  <br>
+ </div>
+ <div class="form-group">
+  <label for="post_body">Link:</label>
+  <br>
+  <a href="<%=h @post.body %>"><%=h @post.body %></a>
+ </div>
+ <button type="submit" class="btn btn-success">Delete</button>
+</form>
